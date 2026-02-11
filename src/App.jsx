@@ -55,7 +55,7 @@ function App() {
                 <BotonPosicion sendPos={sendPos} />
               </div>
               <button className='boton_invisible'>a</button>
-              {yesClick ? <img className='capi-si' src="public\peces-beso.gif" alt="" /> : ""}
+              {yesClick ? <img className='capi-si' src="https://www.euroresidentes.com/hogar/mascotas/wp-content/uploads/sites/5/2016/02/peces-beso.gif?x39313" alt="" /> : ""}
             </div>
           </div>
         }
