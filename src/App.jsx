@@ -46,20 +46,16 @@ function App() {
           firstSayYes &&
           <div>
             {
-              !yesClick ? (<p className='texto'  >Segura? 🤨</p>) :
-                (<p className='texto'  >Muchas Graciass Luuu ❣️❣️❣️</p>)
+              !yesClick? (<p className='texto'  >Segura? 🤨</p>) :
+              (<p className='texto'  >Muchas Graciass Luuu ❣️❣️❣️</p>)
             }
             {nuevaPosX ? <BotonMovible nuevaPosX={nuevaPosX} nuevaPosY={nuevaPosY} /> : ""}
             <div className='buttons_container'>
-              <div onClick={() => setYesClick(true)}>
+              <div onClick={() => setYesClick(true)}> 
                 <BotonPosicion sendPos={sendPos} />
               </div>
               <button className='boton_invisible'>a</button>
               {yesClick ? <img className='capi-si' src="public\peces-beso.gif" alt="" /> : ""}
-              {
-                !yesClick ? (<p className='texto'></p>) :
-                  (<p className='texto'  >No se porque sabia que ibas a decir que si 😊😍</p>)
-              }
             </div>
           </div>
         }
