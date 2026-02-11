@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './BotonMovible.css'; // Archivo CSS donde definirás los estilos y la animación del botón
 
 const BotonMovible = ({ nuevaPosX, nuevaPosY }) => {
-  const [posicion, setPosicion] = useState({ x: nuevaPosX + 100, y: nuevaPosY });
+  const [posicion, setPosicion] = useState({ x: nuevaPosX + 100, y: "auto" });
 
   const moverBoton = () => {
     // Genera una nueva posición aleatoria dentro del área visible de la ventana
