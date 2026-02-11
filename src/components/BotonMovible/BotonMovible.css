@@ -1,0 +1,39 @@
+.boton-movible {
+  position: absolute;
+  /* background-color: blue; */
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+  /* Agrega una transición suave al mover el botón */
+
+  
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+
+/* Definir una animación para el botón */
+@keyframes mover {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(-10px) translateX(10px);
+    /* Mueve el botón hacia arriba y hacia la derecha */
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.boton-movible:active {
+  animation: mover 0.5s ease;
+  /* Aplica la animación al hacer clic en el botón */
+}
